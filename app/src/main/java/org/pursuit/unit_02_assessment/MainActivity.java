@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/html");
                 intent.putExtra(Intent.EXTRA_EMAIL, "mail.pursuit.org");
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-                intent.putExtra(Intent.EXTRA_TEXT, "I'm email body.");
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Email from Pursuit");
+                intent.putExtra(Intent.EXTRA_TEXT, "This is my text");
 
                 startActivity(Intent.createChooser(intent, "Send Email"));
             }
